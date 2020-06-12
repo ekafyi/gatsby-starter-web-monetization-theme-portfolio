@@ -9,7 +9,7 @@ Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsb
 ## ❓ How to use
 
 
-1. Clone [the starter site](https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio) to make a new site from this example
+1. Clone this repository to make a new site from this example
 	* …or use the Gatsby CLI, `gatsby new my-monetized-site https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio`
 	* …or use the [Netlify one-click deploy](https://app.netlify.com/start/deploy?repository=https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio)
 2. Add your payment pointer in `gatsby-config.js`
