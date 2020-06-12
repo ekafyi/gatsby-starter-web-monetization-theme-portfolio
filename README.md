@@ -1,6 +1,6 @@
 # Gatsby Theme Web Monetization — Portfolio Site Example
 
-Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsby-theme-web-monetization/) for a photography site, which contains more advanced customization than the [basic example](https://github.com/ekafyi/gatsby-theme-web-monetization/tree/master/example).
+_Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsby-theme-web-monetization/) for a photography site, which includes importing and modifying components._
 
 [🔗 Demo](http://gtwm-example-portfolio.netlify.app)
 
