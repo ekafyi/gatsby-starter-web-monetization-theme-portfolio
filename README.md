@@ -4,6 +4,8 @@ Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsb
 
 [🔗 Demo](http://gtwm-example-portfolio.netlify.app)
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio)
+
 ---
 
 ## ❓ How to use
@@ -11,7 +13,7 @@ Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsb
 
 1. Clone this repository to make a new site from this example
 	* …or use the Gatsby CLI, `gatsby new my-monetized-site https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio`
-	* …or use the [Netlify one-click deploy](https://app.netlify.com/start/deploy?repository=https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio)
+	* …or use the Netlify deploy button above
 2. Add your payment pointer in `gatsby-config.js`
 3. Add your content in `content`
 4. ??
