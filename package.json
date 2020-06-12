@@ -23,6 +23,7 @@
     "gatsby-plugin-netlify": "^2.1.11",
     "gatsby-plugin-offline": "^3.0.1",
     "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-theme-web-monetization": "^0.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

@@ -949,7 +949,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
   version "7.10.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
   integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
@@ -7318,6 +7318,14 @@ gatsby-plugin-typescript@^2.4.3:
     "@babel/runtime" "^7.9.6"
     babel-plugin-remove-graphql-queries "^2.9.2"
 
+gatsby-plugin-web-monetization@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-web-monetization/-/gatsby-plugin-web-monetization-1.0.1.tgz#7a3ecddd044e76d7920520298871ba7ae4ddf532"
+  integrity sha512-BQNLpF1zOs5HaWnNnHDXZren7OKBOpTkSXtjIxIo+h9YTOl+7hvE0i77Zrx89C8rabMnlkZwxCqLqDjdxU/BOw==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    react "^16.10.2"
+
 gatsby-react-router-scroll@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-3.0.1.tgz#e9fe3e27a6b0a6bdbf2f54859b138e87cb858271"
@@ -7452,6 +7460,18 @@ gatsby-telemetry@^1.3.9:
     stack-trace "^0.0.10"
     stack-utils "1.0.2"
     uuid "3.4.0"
+
+gatsby-theme-web-monetization@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-web-monetization/-/gatsby-theme-web-monetization-0.0.2.tgz#e830ff329625646f8ddef5fb9246d69c6a2ae9ca"
+  integrity sha512-vDOPPCKVzlJ2wE5bPJ8V3VOo3B4wjzjNC2k/CmZGz3SuM5d1vONzcM1I9kB3pH1LJcOD2TGDxt7pBO6KBPtcMQ==
+  dependencies:
+    "@mdx-js/mdx" "^1.6.5"
+    "@mdx-js/react" "^1.6.5"
+    gatsby-plugin-mdx "^1.2.13"
+    gatsby-plugin-web-monetization "^1.0.1"
+    react-web-monetization "^0.0.13"
+    react-web-monetization-ui "^0.2.3"
 
 gatsby-transformer-sharp@^2.5.3:
   version "2.5.3"
@@ -12631,7 +12651,19 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react@^16.12.0, react@^16.13.1, react@^16.8.0:
+react-web-monetization-ui@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/react-web-monetization-ui/-/react-web-monetization-ui-0.2.3.tgz#0d7ad683d274f6818a6ad2bc54c1d1d97b5ef9a4"
+  integrity sha512-qN++cvdwIWKka7ZxKNoaLfTTOX1L68t2OTkMU/JLC9a7Ly37BmWnXCYbbvgYKFMBhp8jmF3y1qJ5J2LCS4zGxQ==
+
+react-web-monetization@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/react-web-monetization/-/react-web-monetization-0.0.13.tgz#2a36e8b543fa9ba8f67cff96db09ae8361a04fa4"
+  integrity sha512-Alu8mIzKxsQnSIgJtey3NdqmVcdk7f1gs22ivQAQM1S8tyCOBFevPrIj8L54YWIdnxjjZK8U3o63EhqOz4CITw==
+  dependencies:
+    prop-types "^15.7.2"
+
+react@^16.10.2, react@^16.12.0, react@^16.13.1, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==

@@ -1,131 +1,235 @@
-<p align="center">
-  <a href="https://emilia.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Portfolio: Emilia
-</h1>
+# Gatsby Theme Web Monetization — Portfolio Site Example
 
-<p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Gatsby Starter Portfolio: Emilia is released under the MIT license." />
-  </a>
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
-    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
-  </a>
-</p>
+Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsby-theme-web-monetization/) for a photography site, which contains more advanced customization than the [basic example](https://github.com/ekafyi/gatsby-theme-web-monetization/tree/master/example).
 
-Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Using the Gatsby Theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia).
+[🔗 Demo](http://gtwm-example-portfolio.netlify.app)
 
-[**Demo Website**](https://emilia.lekoarts.de)
-
-Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
-
-## ✨ Features
-
-- MDX
-- Fully customizable through the usage of Gatsby Themes (and Theme UI)
-- Light Mode / Dark Mode
-- Page Transitions
-- Masonry grid and focus on big images
-- Google Analytics Support
-- SEO (Sitemap, OpenGraph tags, Twitter tags)
-- Offline Support & WebApp Manifest
-
-## 🚀 Getting Started
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-emilia) [![Edit gatsby-starter-portfolio-emilia](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-emilia/tree/master/)
-
-1. **Create a Gatsby site.**
-
-Use the Gatsby CLI to create a new site, specifying this project
-
-```sh
-gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-emilia
-```
-
-2. **Start developing.**
-
-Navigate into your new site's directory and start it up.
-
-```sh
-cd project-name
-gatsby develop
-```
-
-3. **Open the code and start customizing!**
-
-Your site is now running at `http://localhost:8000`!
-
-If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
-
-## 📝 Using and modifying this starter
-
-**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.org/docs/themes/shadowing/) to understand how to customize the underlying theme!
-
-This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia).
-
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-emilia/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
-
-### Adding a new project
-
-New projects will be shown on the index page of this theme and can be added by creating MDX files inside `content/projects`. General setup:
-
-1. Create a new folder inside `content/projects`
-1. Create a new `index.mdx` file, and add the frontmatter
-1. Add images to the created folder (from step 1)
-1. Reference your desired images as your `cover` in the frontmatter
-1. Write your content below the frontmatter (optional)
-
-**Frontmatter reference:**
-
-```md
 ---
-cover: "./sean-foley-0JD7kvxAq0Y-unsplash.jpg"
-date: "2019-09-10"
-title: "Emilia"
-areas:
-  - Neon
-  - Lights
----
+
+## ❓ How to use
+
+
+1. Clone [the starter site](https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio) to make a new site from this example
+	* …or use the Gatsby CLI, `gatsby new my-monetized-site https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio`
+	* …or use the [Netlify one-click deploy](https://app.netlify.com/start/deploy?repository=https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio)
+2. Add your payment pointer in `gatsby-config.js`
+3. Add your content in `content`
+4. ??
+5. Profit
+
+Head to the themes’ documentation for more information about their usage:
+- [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsby-theme-web-monetization)
+- [gatsby-theme-emilia](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia)
+
+## ⚠️ Warning
+
+This example serves as an MVP which aims to demonstrates how the Web Monetization API works.
+
+Wrapping your “exclusive” (monetized-only) content in the `IfWebMonetized` component _is not secure_. The content still gets sent, just not rendered; it will be easy for tech-savvy visitors to find it. Don’t use it for sensitive data, and consider using serverless/cloud functions for better security.
+
+Also, make sure your source code (eg. Github repository) is set to private. 😬
+
+## 🛠 How I made this example site
+
+In this site, I combine gatsby-theme-web-monetization with the excellent [Emilia Theme by LekoArts](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia) using its starter site. Then I continue with the steps below.
+
+0) Install the theme.
+
+```bash
+yarn add gatsby-theme-web-monetization
+# or npm install --save gatsby-theme-web-monetization
 ```
 
-The frontmatter alone is enough, if you'd like to add additional content you can do so by writing your content (as usual with MDX) below the frontmatter. It'll be displayed in the header of the project below the date and areas.
+1) Add theme to gatsby-config. The order does not matter with the plugins used in this repo. If you use this with other plugins and encounter issues, you may have to do some trial and error regarding the plugins order.
 
-### Changing the "About Me" text
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-theme-web-monetization`,
+      options: {
+        // Replace with your wallet's payment pointer
+        paymentPointer: "$wallet.example.com/eka",
+      },
+    },
+    // ... other themes
+  ]
+}
+```
 
-Create a file at `src/@lekoarts/gatsby-theme-emilia/texts/about-me.mdx` to edit the text.
+2) As shown in the [basic example](https://github.com/ekafyi/gatsby-theme-web-monetization/tree/master/example), we can use the theme’s components in MDX pages without importing anything. Additionally, we can also use them in our components outside of MDX by importing them. 
 
-### Changing the avatar
+In this example, I import the `WebMonetizedStatus` component and add it to the header.
 
-Place an image with the name `avatar` inside the folder `content/assets` (or your custom `assetsPath` which you defined for the theme).
+```js
+// src/@lekoarts/gatsby-theme-emilia/components/header.js
 
-### Change your `static` folder
+// ... other imports
+import { WebMonetizedStatus } from "gatsby-theme-web-monetization";
 
-The `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!
+// Pass your message/content as props to the WebMonetizedStatus component
+const customActive = "String or component to render if Web Monetization is active";
+const customInactive = "String or component to render if Web Monetization is not active";
 
-## 🤔 Questions or problems?
+const Header = () => {
+  return (
+    <>
+      {/* ... header component code */}
+      <WebMonetizedStatus
+        active={customActive}
+        inactive={customInactive}
+      />
+      {/* ... more header component code */}
+    </>
+  );
+};
 
-Please open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!
+export default Header;
+```
 
-## 🎓 Learning Gatsby
+- See [theme documentation](https://github.com/ekafyi/gatsby-theme-web-monetization/#usage) for the list of components you can use.
+- In the full code, I use the `sx` props for styling with Theme UI. You can use any other styling methods (Styled Components, CSS Modules, add Tailwind CSS class names, etc).
+- This file structure comes from [“shadowing”](https://www.gatsbyjs.org/docs/themes/shadowing) the Emilia theme, ie. overriding the theme’s `Header` component with my modified one. You _can_ use the gatsby-theme-web-monetization components anywhere, regardless of the theme shadowing concept.
 
-Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).
+Now for each photograph, I want to do these:
+- Display hi-res image download link _only_ to web monetized users
+- Display call to action/message to non-web monetized users
 
-### Themes
+I _can_ achieve it this way in an MDX page. (This is a barebones simplified example which has not addressed CSS styling.)
 
-- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
+```mdx
+---
+title: My test post
+date: 2020-06-03
+---
 
-### General
+![Description of the photo](./images/some-source.jpg)
 
-- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+<figcaption>Some image caption here</figcaption>
 
-- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
+<IfWebMonetized>
 
-## 🌟 Supporting me
+[Download hi-res image](https://dropbox.com/some-download-link)
 
-Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
+</IfWebMonetized>
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
+<WebMonetizedPaywall>
+
+👋🏼 Want this photo? Hi-res image download is available for web monetized users. [Learn more.](https://coil.com)
+
+</WebMonetizedPaywall>
+```
+
+But it’s tedious, messy, and impractical to repeat these lines for _every photograph and every series page_. We can abstract these away into a reusable component, as shown in the next step.
+
+3) Create a `Photo` component that renders an image from the specified source, a download link for monetized users, and a message for non-monetized users.
+
+
+```js
+// src/components/photo.js (truncated to relevant parts)
+
+// ... other imports
+import { WebMonetizedPaywall } from "gatsby-theme-web-monetization";
+import { IfWebMonetized } from "react-web-monetization";
+
+import ButtonDownload from "./button-download";
+import Cta from "./cta";
+import CustomImg from "./custom-img";
+
+const Photo = ({ src, alt, caption, isFree, downloadUrl }) => {
+  return (
+    <>
+      <CustomImg src={src} alt={alt || ""} />
+      {caption && <figcaption>{caption}</figcaption>}
+      {downloadUrl &&
+        (isFree ? (
+          <ButtonDownload href={downloadUrl} />
+        ) : (
+          <>
+            <IfWebMonetized>
+              <ButtonDownload href={downloadUrl} />
+            </IfWebMonetized>
+            <WebMonetizedPaywall>
+              <Cta />
+            </WebMonetizedPaywall>
+          </>
+        ))}
+    </>
+  );
+};
+
+export default Photo;
+```
+
+- We import `WebMonetizedPaywall` and `IfWebMonetized` (the latter from [react-web-monetization](https://github.com/sharafian/react-web-monetization), which is a dependency of this theme; you don’t need to install it yourself to import the components).
+- We create and import UI components `ButtonDownload` (the “Download” button) and `Cta` (the call-to-action message). We also have utility component `CustomImg` to query for image and process it through Gatsby’s Sharp image library (which has neat capabilities like lazy loading, auto resizing, `srcset` attribute, etc).  These are just an example; you can use any approach, styling decisions, and add or remove any functionalities.
+- We add `ButtonDownload` inside `IfWebMonetized` to display to web monetized users, and add `Cta` inside `WebMonetizedPaywall` for non web monetized users.
+- In case I want to make some of my photos downloadable by _all_ users, I also have an `isFree` prop.
+
+This `Photo` component is not yet available for use in MDX pages. We can either import it (which will also be tedious as we have to do it on every page), or we can create our own MDX Provider and pass the `Photo` component there, which will allow us to use `Photo` in our MDX pages without importing.
+
+4. Create a custom MDXProvider component and pass our `Photo` component there. I’m calling it `MyMdxProvider`.
+
+```js
+import React from "react";
+import { MDXProvider } from "@mdx-js/react";
+import Photo from "./photo";
+
+const components = { Photo };
+
+const MyMdxProvider = ({ children }) => (
+  <MDXProvider components={components}>{children}</MDXProvider>
+);
+
+export default MyMdxProvider;
+```
+
+If you build your Gatsby site without a theme, add the `Photo` component to your existing MDXProvider instead, and skip the next step. [Learn more about MDX Provider.](https://mdxjs.com/getting-started#mdxprovider)
+
+
+5. We need to wrap our project content with our new `MyMdxProvider` so we can use the `Photo` component without importing. We can do so by shadowing the Emilia theme’s project page layout.
+
+```js
+// src/@lekoarts/gatsby-theme-emilia/components/project.js
+
+// ...other imports
+import MyMdxProvider from "../../../components/my-mdx-provider";
+
+const Project = ({ data: { project } }) => {
+  return (
+    <Layout>
+      <SEO // ... props
+      />
+      <MyMdxProvider>
+        <HeaderProject
+          title={project.title}
+          description={project.body}
+          areas={[]}
+          date={project.date}
+        />
+      </MyMdxProvider>
+    </Layout>
+  );
+};
+
+export default Project;
+```
+
+6. Finally, we use the `Photo` component in MDX pages.
+
+```mdx
+---
+title: Sleeping Cats
+date: 2020-06-03
+---
+
+<Photo
+  src="sleeping-cats/images/sc1.jpg"
+  caption="This is not an apple"
+  alt="Gray tabby kitten sleeping in a wooden storage box that said 'Apples' atop of a pile of newspapers. The handle is full of scratches."
+  downloadUrl="https://www.dropbox.com/s/nu0xrsje9npbdlx/full_sc1.jpg?dl=0"
+/>
+```
+
+- (Nothing to do with gatsby-theme-web-monetization, just how this `Photo` component works.) Due to how the GraphQL file query works, the photo `src` value is relative to the `projects` path, NOT the MDX file. For instance, for image file located in `content/projects/sleeping-cats/images/sc1.jpg`, we write `src="sleeping-cats/images/sc1.jpg"`.

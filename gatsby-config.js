@@ -1,30 +1,49 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    siteTitle: `Gatsby Web Monetization Theme Example`,
+    siteDescription: `Example site using Gatsby Web Monetization Theme by @ekafyi`,
+    siteTitleAlt: `Gatsby Web Monetization Theme Example — Photography Site`,
+    author: `@ekafyi`,
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-emilia`,
-      // See the theme's README for all available options
-      options: {},
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-theme-web-monetization`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // Replace with your wallet's payment pointer
+        paymentPointer: "$wallet.example.com/eka",
       },
     },
+    {
+      resolve: `@lekoarts/gatsby-theme-emilia`,
+      // See the theme's README for all available options
+      options: {
+        name: `Eka’s Photography`,
+        location: ``,
+        socialMedia: [
+          {
+            title: `Github`,
+            href: `gatsby-starter-web-monetization-theme-portfolio`,
+          },
+        ],
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //   },
+    // },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+        name: `Eka’s Photography`,
+        short_name: `Eka’s Photography`,
+        description: `Example photography site using Gatsby Web Monetization Theme by @ekafyi`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
@@ -46,4 +65,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
-}
+};
