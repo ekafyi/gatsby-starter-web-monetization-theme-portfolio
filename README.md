@@ -4,6 +4,8 @@ Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsb
 
 [🔗 Demo](http://gtwm-example-portfolio.netlify.app)
 
+[🛠 Step-by-step post on how I add the theme to this site](https://gist.github.com/ekafyi/ab7b6b50518d78ffa0b657cb6300a4f9)
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ekafyi/gatsby-starter-web-monetization-theme-portfolio)
 
 ---
@@ -22,8 +24,6 @@ Usage example of [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsb
 Head to the themes’ documentation for more information about their usage:
 - [gatsby-theme-web-monetization](https://github.com/ekafyi/gatsby-theme-web-monetization)
 - [gatsby-theme-emilia](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emilia)
-
-I wrote about [how I made this example site here](https://gist.github.com/ekafyi/ab7b6b50518d78ffa0b657cb6300a4f9), which could be useful if you are looking to do something similar without using this starter.
 
 ## ⚠️ Warning
 
